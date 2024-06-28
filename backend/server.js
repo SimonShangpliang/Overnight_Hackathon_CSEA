@@ -14,7 +14,11 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 app.use(cors(
-
+{
+    origin:["https://overnight-hackathon-csea-frontend.vercel.app/"],
+    methods:["POST","GET"],
+    credentials:true
+}
     
 ));
 

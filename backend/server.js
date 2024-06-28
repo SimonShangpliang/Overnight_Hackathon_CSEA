@@ -18,7 +18,10 @@ app.use(cors());
 
 
 const server = http.createServer(app);
+app.get("/",(req,res)=>{
 
+res.json("Hello")
+})
 
 async function initialize() {
     try {

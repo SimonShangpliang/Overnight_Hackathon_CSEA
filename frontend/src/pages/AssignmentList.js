@@ -36,7 +36,7 @@ function AssignmentList() {
         console.log(roll_no);
         try {
           console.log(parsedUser);
-          const response = await fetch('http://localhost:8080/user/findUser', {
+          const response = await fetch('https://overnight-hackathon-csea-api.vercel.app/user/findUser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -74,7 +74,7 @@ function CreateAssignment() {
     //     "users": values2
     //   }));
     // API call to add a new assignment
-    const resp =  await fetch('http://localhost:8080/assignment/addNewAssignment', {
+    const resp =  await fetch('https://overnight-hackathon-csea-api.vercel.app/assignment/addNewAssignment', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

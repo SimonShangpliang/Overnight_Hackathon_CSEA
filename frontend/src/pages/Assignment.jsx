@@ -43,7 +43,7 @@ function Assignment() {
 
     const fetchAssignment = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/assignment/getAssignments`, {
+        const response = await fetch(`https://overnight-hackathon-csea-api.vercel.app/assignment/getAssignments`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -99,7 +99,7 @@ function Assignment() {
 
   const checkAssignments = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/assignment/checkAssignments/${id}`, {
+      const response = await fetch(`https://overnight-hackathon-csea-api.vercel.app/assignment/checkAssignments/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -129,7 +129,7 @@ function Assignment() {
 
   const submitFeedback = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/assignment/submitFeedback`, {
+      const response = await fetch(`https://overnight-hackathon-csea-api.vercel.app/assignment/submitFeedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -167,7 +167,7 @@ function Assignment() {
 
   const removeSub = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/assignment/removeSub`, {
+      const response = await fetch(`https://overnight-hackathon-csea-api.vercel.app/assignment/removeSub`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -197,7 +197,7 @@ function Assignment() {
     formData.append('fileName', file.name);
 
     try {
-      const response = await fetch('http://localhost:8080/assignment/upload', {
+      const response = await fetch('https://overnight-hackathon-csea-api.vercel.app/assignment/upload', {
         method: 'POST',
         body: formData,
       });

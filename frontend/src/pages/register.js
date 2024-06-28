@@ -55,7 +55,7 @@ export default function Register() {
       window.alert('rollNumber cannot be empty ' );
       return
     }
-   const resp=await fetch('http://localhost:8080/user/addNewUser', {
+   const resp=await fetch('https://overnight-hackathon-csea-api.vercel.app/user/addNewUser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
